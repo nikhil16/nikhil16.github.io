@@ -1,2 +1,2 @@
-# storyofsuccess.github.io
+# storyofsuccess
 first website
