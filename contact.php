@@ -1,16 +1,16 @@
 <?php
-	$to      = 'readsuccessstoriess@gmail.com';
+	$to      = 'storyofsuccess.in';
 	$email   = $_POST['email'];
 	$name  = $_POST['name'];
 	$subject = $_POST['subject'];
 	$message = $_POST['comments'];
 
-	$headers = 'From: http://.github.io'. '<'.$email.'>' . "\r\n" .
+	$headers = 'From: http://YourUrl'. '<'.$email.'>' . "\r\n" .
 		'Reply-To: '. $email . "\r\n" .
 		'X-Mailer: PHP/' . phpversion();
 
-	mail($to, $subject, $message, $headers);
+	if (mail($to, $subject, $message, $headers)){
 
-	echo "<script>window.location.href = 'http://.github.io';</script>";
+	echo "<script>window.location.href = 'http://nikhil16.github.io/nikhil16';</script>";
    
 ?>
