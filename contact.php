@@ -1,5 +1,5 @@
 <?php
-	$to      = 'storyofsuccess.in';
+	$to      = 'readsuccessstoiess@gmail.com';
 	$email   = $_POST['email'];
 	$name  = $_POST['name'];
 	$subject = $_POST['subject'];
