@@ -1,17 +1,18 @@
 <?php
-$name = $_POST['name'];
-$email = $_POST['email'] ;
-$message = $_POST['comments'] ;
-$subject = $_POST['subject'];
-
 $to = "readsuccessstoriess@gmail.com";
-$from = "automailer@storyofsuccess.in (Website Automailer)";
-$subject = "Contact Us";
+
+$email = $_POST['email'] ;
+$name = $_POST['name'];
+$message = $_POST['comments'] ;
+
+
+
 $headers =  "From: $email" .'<'.$email.'>' . "\r\n" .
 		'Reply-To: '. $readsuccessstoriess@gmail.com . "\r\n" .
 		'X-Mailer: PHP/' . phpversion();
 		
-//$send = 
-mail($to, $subject, $message, $headers) ;
-header('Location: test.html');
+   mail($to, $subject, $message, $headers) ;
+   echo "<script>window.location.href = 'email';</script>";
+   header('Location: test.html');
+   
 ?>
