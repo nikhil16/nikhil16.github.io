@@ -7,10 +7,10 @@ $subject = $_POST['subject'];
 $to = "readsuccessstoriess@gmail.com";
 //$from = "automailer@storyofsuccess.in (Website Automailer)";
 $subject = "Contact Us";
-$headers =  "From: http://storyofsuccess.in/test.html/" .'<'.$email.'>' . "\r\n" .
-		'Reply-To: '. $email . "\r\n" .
+$headers =  "From: $email" .'<'.$email.'>' . "\r\n" .
+		'Reply-To: '. $readsuccessstoriess@gmail.com . "\r\n" .
 		'X-Mailer: PHP/' . phpversion();
 		
 $send = mail($to, $subject, $body, $headers) ;
-echo "<script>window.location.href = 'http://storyofsuccess.in/test.html/';</script>";
+header('Location: test.html');
 ?>
