@@ -12,5 +12,5 @@ $headers =  "From: http://storyofsuccess.in/" .'<'.$email.'>' . "\r\n" .
 		'X-Mailer: PHP/' . phpversion();
 		
 $send = mail($to, $subject, $body, $headers) ;
-echo "<script>window.location.href = 'http://storyofsuccess.in/';</script>";
+echo "<script>window.location.href = 'readsuccessstroriess@gmail.com';</script>";
 ?>
