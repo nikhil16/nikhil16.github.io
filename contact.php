@@ -8,11 +8,11 @@ $message = $_POST['comments'] ;
 
 
 $headers =  "From: $email" .'<'.$email.'>' . "\r\n" .
-		'Reply-To: '. $readsuccessstoriess@gmail.com . "\r\n" .
+		'Reply-To: '. $email. "\r\n" .
 		'X-Mailer: PHP/' . phpversion();
 		
    mail($to, $subject, $message, $headers) ;
-   echo "<script>window.location.href = 'email';</script>";
+   echo "<script>window.location.href = 'http://storyofsuccess.in/';</script>";
    header('Location: test.html');
    
 ?>
