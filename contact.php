@@ -1,18 +1,16 @@
 <?php
-$to = "readsuccessstoriess@gmail.com";
+if(isset($_POST["submit"])) {
+$recipient = "readsuccessstoriess@gmail.com"; //my email
+echo $subject = 'Email message from Point Plumbing';
+echo $name = $_POST ["Name"];
+echo $email = $_POST["Email"];
+echo  $message = $_POST["comments"];
 
-$email = $_POST['email'] ;
-$name = $_POST['name'];
-$message = $_POST['comments'] ;
+ $mailBody="Name: $name\nEmail: $email\n\n$message"; 
 
+ mail($recipient, $subject, $mailBody, "From: $name <$email>");
 
+echo $thankYou="<p>Thank you! We will be in contact with you shortly.</p>";
 
-$headers =  "From: $email" .'<'.$email.'>' . "\r\n" .
-		'Reply-To: '. $email. "\r\n" .
-		'X-Mailer: PHP/' . phpversion();
-		
-   mail($to, $subject, $message, $headers) ;
-   echo "<script>window.location.href = 'http://storyofsuccess.in/';</script>";
-   header('Location: test.html');
-   
+}
 ?>
