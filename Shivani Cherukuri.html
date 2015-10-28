@@ -71,12 +71,12 @@
                                 <a id="brand" class="navbar-brand" href="index.html"><img src="images/logoo.png"></a>
                             </div>
                             
-                        </div><!-- nav -->
+                        </div>
                     </nav>
-                </div><!-- menu wrapper -->
+                </div>
             </header><!-- end header -->
-        </div><!-- end container -->
-       <!-- end page_header -->
+        </div>
+       
 <br>
 <br>
 <br>
@@ -250,15 +250,12 @@
         </script>
         <script type="text/javascript">
             $(".rotate").textrotator({
-            animation: "flip", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
-            separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
-            speed: 3000 // How many milliseconds until the next word show.
+            animation: "flip", 
+            separator: ",", 
+            speed: 3000 
             });
         </script>
         <script type="text/javascript">
-          // Close the navbar if collapsed (small screen) when clicking on a menu link
-          // From edit 2 on
-          // http://stackoverflow.com/questions/14203279/bootstrap-close-responsive-menu-on-click/23171593#23171593
           $(function () {
             $('.navbar-collapse ul li a:not(.dropdown-toggle)').bind('click touchstart', function () {
               $('.navbar-toggle:visible').click();
